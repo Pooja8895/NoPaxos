@@ -5,7 +5,8 @@ import sys, string
 import subprocess
 import os
 from runBench import runTest
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 
 clientMachines = 5

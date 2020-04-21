@@ -5,17 +5,19 @@ import sys, string
 import subprocess
 import os
 from runBench import runTest
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
+from matplotlib import pyplot as plt
 from matplotlib.ticker import FormatStrFormatter
 
-clientMachines = 5
+clientMachines = 1
 averageRuns = 10
 legend = {"nopaxos": "NOPaxos", "unreplicated": "Unreplicated", "vr": "Paxos", "batch": "Batching", "fastpaxos": "Fast Paxos"}
 protocols = ["nopaxos","unreplicated", "vr", "batch", "fastpaxos"]
 #maxThreads = {"unreplicated": 25, "vr": 5, "batch": 25, "fastpaxos": 4, "nopaxos": 20}
 #stepSize = {"unreplicated": 3, "vr": 1, "batch": 3, "fastpaxos": 1, "nopaxos": 3}
-threadRanges = {"unreplicated": range(1, 6, 1) + range(6, 25, 3), "vr": range(1,
-    5), "batch": range(1, 25, 3), "fastpaxos": range(1, 4), "nopaxos": range(1, 20, 3)}
+threadRanges = {"unreplicated": list(range(1, 6, 1)) + list(range(6, 25, 3)), "vr": list(range(1,
+    5)), "batch": list(range(1, 25, 3)), "fastpaxos": list(range(1, 4)), "nopaxos": list(range(1, 20, 3))}
 for protocol in protocols:
     throughputList = []
     latencyList = []
@@ -38,12 +40,11 @@ for protocol in protocols:
         avgLatency /= float(totRuns)
         throughputList.append(avgThroughput)
         latencyList.append(avgLatency)
-    plt.plot(throughputList, latencyList, label=legend[protocol], linestyle='-',
-            marker='o')
+    plt.plot(throughputList, latencyList, label=legend[protocol], linestyle='-',marker='o')
 plt.legend()
 plt.xlabel("Throughput (ops/sec)")
-plt.xlim([0, 200])
-plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%dK'))
+#plt.xlim([0, 200])
+#plt.gca().xaxis.set_major_formatter(FormatStrFormatter('%dK'))
 plt.ylabel("Latency (microsec)")
 plt.title("NOPAXOS Figure 5 replication (3 replicas)")
 plt.savefig('Figure5-3.png')

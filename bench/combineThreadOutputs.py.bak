@@ -19,7 +19,7 @@ for m in match_iter1:
         max_seconds = num_seconds;
 
 if max_seconds != -1:
-    print(("Throughput (requests/sec): " + str(total_requests/max_seconds)))
+    print("Throughput (requests/sec): " + str(total_requests/max_seconds))
 else:
     print("No throughput measurements")
 
@@ -34,7 +34,7 @@ for m in match_iter2:
     num_avg_latency += 1;
 
 if num_avg_latency > 0:
-    print(("Avg latency: " + str(sum_avg_latency/num_avg_latency)));
+    print("Avg latency: " + str(sum_avg_latency/num_avg_latency));
 else:
     print("No latency measurements")
 

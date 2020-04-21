@@ -1,0 +1,39 @@
+20200217-014633-1106 20872 * BindToPort      (udptransport.cc:209): Binding to 0.0.0.0:0
+20200217-014633-1107 20872 * Register        (udptransport.cc:412): Listening on UDP port 50440
+20200217-014633-1107 20872 * BindToPort      (udptransport.cc:209): Binding to 0.0.0.0:0
+20200217-014633-1108 20872 * Register        (udptransport.cc:412): Listening on UDP port 39561
+20200217-014633-1108 20872 * BindToPort      (udptransport.cc:209): Binding to 0.0.0.0:0
+20200217-014633-1108 20872 * Register        (udptransport.cc:412): Listening on UDP port 57491
+20200217-014633-1111 20872 * WarmupDone      (benchmark.cc:105): Completed warmup period of 0 seconds with 0 requests
+20200217-014633-1111 20872 * WarmupDone      (benchmark.cc:105): Completed warmup period of 0 seconds with 0 requests
+20200217-014633-1111 20872 * WarmupDone      (benchmark.cc:105): Completed warmup period of 0 seconds with 0 requests
+20200217-014633-3407 20872 * Finish          (benchmark.cc:190): Completed 1000 requests in 0.229569 seconds
+20200217-014633-3408 20872 * Finish          (benchmark.cc:190): Completed 1000 requests in 0.229707 seconds
+20200217-014633-3409 20872 * CooldownDone    (benchmark.cc:116): Finished cooldown period.
+20200217-014633-3409 20872 * CooldownDone    (benchmark.cc:121): Median latency is 211648 ns (211 us)
+20200217-014633-3409 20872 * CooldownDone    (benchmark.cc:129): Average latency is 227405 ns (227 us)
+20200217-014633-3410 20872 * CooldownDone    (benchmark.cc:133): 90th percentile latency is 288092 ns (288 us)
+20200217-014633-3410 20872 * CooldownDone    (benchmark.cc:137): 95th percentile latency is 326607 ns (326 us)
+20200217-014633-3410 20872 * CooldownDone    (benchmark.cc:141): 99th percentile latency is 451540 ns (451 us)
+20200217-014633-3410 20872 * CooldownDone    (benchmark.cc:116): Finished cooldown period.
+20200217-014633-3411 20872 * CooldownDone    (benchmark.cc:121): Median latency is 213960 ns (213 us)
+20200217-014633-3411 20872 * CooldownDone    (benchmark.cc:129): Average latency is 227580 ns (227 us)
+20200217-014633-3411 20872 * CooldownDone    (benchmark.cc:133): 90th percentile latency is 287254 ns (287 us)
+20200217-014633-3411 20872 * CooldownDone    (benchmark.cc:137): 95th percentile latency is 324182 ns (324 us)
+20200217-014633-3411 20872 * CooldownDone    (benchmark.cc:141): 99th percentile latency is 435147 ns (435 us)
+20200217-014633-3415 20872 * Finish          (benchmark.cc:190): Completed 1000 requests in 0.230386 seconds
+20200217-014633-3416 20872 * CooldownDone    (benchmark.cc:116): Finished cooldown period.
+20200217-014633-3416 20872 * CooldownDone    (benchmark.cc:121): Median latency is 213752 ns (213 us)
+20200217-014633-3416 20872 * CooldownDone    (benchmark.cc:129): Average latency is 228225 ns (228 us)
+20200217-014633-3417 20872 * CooldownDone    (benchmark.cc:133): 90th percentile latency is 293893 ns (293 us)
+20200217-014633-3417 20872 * CooldownDone    (benchmark.cc:137): 95th percentile latency is 329869 ns (329 us)
+20200217-014633-3417 20872 * CooldownDone    (benchmark.cc:141): 99th percentile latency is 407635 ns (407 us)
+20200217-014633-4120 20872 * operator()      (client.cc:273):    All clients done.
+20200217-014633-4120 20872 * LATENCY total: 125 us 227 us/131 us 4464 us (3003 samples, 683 ms total)
+20200217-014633-4121 20872 *      65 us |          6 | 
+20200217-014633-4121 20872 *     131 us |       2494 | ==================================================
+20200217-014633-4121 20872 *     262 us |        489 | =========
+20200217-014633-4121 20872 *     524 us |         11 | 
+20200217-014633-4121 20872 *    1048 us |          0 |
+20200217-014633-4121 20872 *    2097 us |          0 |
+20200217-014633-4121 20872 *    4194 us |          3 | 
