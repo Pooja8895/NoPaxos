@@ -1,4 +1,4 @@
-This repository extends the NOPaxos repository  and Eduaterman repository: https://github.com/edauterman/NOPaxos by adding scripts to evaluate the performance of NOPaxos on a cloud platform. Specifically, it contains the benchmark script we used to recreate the Fig 3 and 5  from the NOPaxos paper on the gcloud platform.
+This repository extends the NOPaxos repository: https://github.com/UWSysLab/NOPaxos  and Eduaterman repository: https://github.com/edauterman/NOPaxos by adding scripts to evaluate the performance of NOPaxos on a cloud platform. Specifically, it contains the benchmark script we used to recreate the Fig 3 and 5  from the NOPaxos paper on the gcloud platform.
 Usage:
 In order to perform the testing for experiment-3 using OpenStack, perform the following steps to setup the OpenStack Cloud:
 
